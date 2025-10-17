@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #9d5a45;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 22px;
+}
+body,.container,.view{
+    display: flex;
+}
+.container{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.card{
+    width: 300px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.9);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.image img{
+    width: 100%;
+    height: 200px;
+}
+.text{
+    margin: 28px 17px;
+    color: gray;
+}
+.view{
+    color: #fff;
+}
+.state-box{
+    padding: 16px 0;  
+    flex-grow: 1;
+    border-right: 1px solid #555;
+}
+.state-box span{
+    font-size: 1.1rem;
+}
+.state-box p{
+    font-size: 12px;
+}
+.state-box:last-child{
+    border-right: none;
+}
+.card-info p:first-child{
+    margin-top: 14px;
+}
+.card:nth-child(1) .card-info p:first-child{
+    color: #ff076d;
+}
+.card:nth-child(1) .view{
+    background-color: #ff076d;
+}
+.card:nth-child(2) .card-info p:first-child{
+    color: #fd4d05;
+}
+.card:nth-child(2) .view{
+    background-color: #fd4d05;
+}
+.card:nth-child(3) .card-info p:first-child{
+    color: #01be40;
+}
+.card:nth-child(3) .view{
+background-color: #01be40;
+}
+.card:hover{
+    transform: scale(1.14);
+}
+       

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    background-color: #151320;
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 22px 0;
+}
+.heading{
+    font-size: 7vw;
+    text-align: center;
+    margin-bottom: 26px;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    gap: 40px;
+}
+.card-info{
+    background-color: #1c1b29;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 2s;
+}
+.overlay1{
+    background: linear-gradient(to right,rgba(201,84,218,0.6),rgba(134,64,214,0.7),rgba(60,34,204,0.6)),url(las-vegas-city.jpeg);
+}
+.overlay2{
+    background: linear-gradient(rgba(65,166,153,0.7),rgba(65,176,176,0.8)),url(new-york-city.jpeg);
+}
+.overlay3{
+    background: linear-gradient(rgba(193,101,58,0.7),rgba(219,149,64,0.6)),url(singapore-city.jpeg);
+}
+.bg-color{
+    height: 200px;
+    clip-path: polygon(0 0, 100% 0,100% 90%, 0% 100%);
+    background-size: cover;
+}
+h3{
+    font-size: 18px;
+    margin: 15px 0 0 15px;
+}
+.text{
+    font-size: 15px;
+    color: #999;
+    text-align: justify;
+    line-height: 22px;
+    padding: 16px 12px;
+}
+.card-info:hover{
+    transform: scale(1.2);
+}
